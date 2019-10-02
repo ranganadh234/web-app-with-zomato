@@ -5,7 +5,7 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-md-12">
-              <h1 class="display-4">Browse Our Restaurents</h1>
+              <h1 class="display-4">Browse Our Restaurants</h1>
               <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
             </div>
           </div>
@@ -18,7 +18,7 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">
+                <a href="{% url 'index' %}">
                   <i class="fas fa-home"></i> Home</a>
               </li>
               <li class="breadcrumb-item active"> Browse Listings</li>
@@ -44,7 +44,10 @@
                     <div>
                         <p>{{obj.collection.description}}</p>
                     </div>
-                    <a href="#" class="btn btn-primary btn-block">More Info</a>
+                    <div>
+                    <a href="#" class="btn btn-primary btn-block" style="align:left">More Info</a>
+                    <a href="#" class="btn btn-primary btn-block">Bookings</a>
+                    </div>
                   </div>
                 </div>
               </div>

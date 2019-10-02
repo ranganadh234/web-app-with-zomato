@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} | Welcome {% endblock %}
+{% block content %}
+
+<!-- Showcase -->
+<section id="showcase">
+        <div class="container text-center">
+          <div class="home-search p-5">
+            <div class="overlay p-5">
+              <h1 class="display-4 mb-4">
+                Food ordering Just Got So Easy
+              </h1>
+              <p class="lead">Search based on city name or city id or categories and so on ...</p>
+              <div class="search">
+                <form action="{% url 'search' %}">
+                  <!-- Form Row 1 -->
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label class="sr-only">City id</label>
+                      <input type="text" name="city_id" class="form-control" placeholder="city id">
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <label class="sr-only">City name</label>
+                      <input type="text" name="city_name" class="form-control" placeholder="City name">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label class="sr-only">Establishments</label>
+                      <input type="text" name="establishments" class="form-control" placeholder="Establishments">
+                    </div>
+
+
+
+                  </div>
+                  <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <!--  Alerts -->
+      {% include 'partials/alerts.html' %}
+
+
+{% endblock %}

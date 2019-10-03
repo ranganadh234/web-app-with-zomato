@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
     'search.apps.SearchConfig',
+    'bookings.apps.BookingsConfig',
     'rest_framework',
 ]
 
